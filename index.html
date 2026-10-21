@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Climate Change Awareness with Smart Devices</title>
+<meta name="description" content="Sourced data on climate change, how sense-send-act devices help, and what they cost. CHE 110 project, Lovely Professional University.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<header><div class="wrap"><nav aria-label="Main">
+<strong>Climate and Smart Devices</strong>
+<a href="#basics">Basics</a><a href="#data">Global data</a><a href="#tech">Technology</a><a href="#india">India and Punjab</a><a href="#footprint">Footprint</a><a href="#calc">Calculator</a><a href="#reports">Reports</a><a href="#act">Act</a>
+</nav></div></header>
+
+<main>
+<div class="hero"><div class="wrap">
+<h1>Climate change awareness with smart devices</h1>
+<p class="lead">Measured facts on how the planet is warming, four ways sensors, satellites and software can cut emissions, and the e-waste and electricity cost of the devices themselves. Every number links to its source.</p>
+<a class="btn" href="#data">See the data</a> <a class="btn alt" href="#reports">Browse reports</a>
+<div class="facts">
+<div class="fact"><b>432 ppm</b>CO2 at Mauna Loa, May 2026<br><small>Scripps, record high (313 ppm in 1958)</small></div>
+<div class="fact"><b>1.55 °C</b>2024 above pre-industrial<br><small>WMO, warmest year on record</small></div>
+<div class="fact"><b>22.3%</b>of 2022 e-waste documented as recycled<br><small>Global E-waste Monitor 2024</small></div>
+<div class="fact"><b>164.59 GW</b>India solar capacity, July 2026<br><small>MNRE, up from 2.8 GW in 2014</small></div>
+</div></div></div>
+
+<section id="basics"><div class="wrap fade">
+<h2>1. What is happening and why</h2>
+<div class="grid">
+<div class="card"><h3>Weather versus climate</h3><p>Weather is one day's conditions. Climate is the average weather of a place over thirty years or more. Climate change is a lasting shift in those averages.</p></div>
+<div class="card"><h3>The greenhouse effect</h3><p>Carbon dioxide and methane trap heat like a blanket. Since the 1800s, burning coal, oil and gas has been the main driver (NASA, IPCC), with deforestation, farming and landfills adding more.</p></div>
+<div class="card"><svg viewBox="0 0 320 170" role="img" aria-label="Sunlight enters, heat is trapped by gases"><rect width="320" height="170" fill="#ebe5d3"/><circle cx="50" cy="35" r="18" fill="#c9822b"/><path d="M70 45L150 120" stroke="#c9822b" stroke-width="3"/><rect x="0" y="40" width="320" height="22" fill="#2a6f8f" opacity=".25"/><text x="180" y="56" font-size="11" fill="#1b2a24">CO2, CH4 layer</text><rect y="130" width="320" height="40" fill="#2f7d5f"/><path d="M150 125C190 100 230 100 250 70" stroke="#b5472f" stroke-width="3" fill="none" stroke-dasharray="5 4"/><text x="170" y="155" font-size="11" fill="#fff">Earth's surface</text><text x="256" y="68" font-size="11" fill="#b5472f">heat returns</text></svg><p class="cap">Sunlight reaches the surface; part of the heat is held back by greenhouse gases.</p></div>
+</div>
+<figure style="margin-top:20px"><img src="assets/img/lahaina-aftermath.jpg" alt="Burned area in Lahaina, Maui after the August 2023 wildfire" onerror="this.closest('figure').hidden=true"><p class="cap">Lahaina, Maui, after the August 2023 wildfire that killed about 100 people. Add your photo with credit, see README.</p></figure>
+</div></section>
+
+<section id="data" class="tint"><div class="wrap fade">
+<h2>2. Global data</h2>
+<div class="grid">
+<div class="card"><h3>Carbon dioxide at Mauna Loa (ppm)</h3><canvas id="co2"></canvas><p class="cap">1958 and 2024 to 2026 from Scripps; 1980 to 2020 are approximate annual means from NOAA GML. <a href="https://today.ucsd.edu/story/annual-carbon-dioxide-peak-reaches-432-parts-per-million">Source</a></p></div>
+<div class="card"><h3>Warming above pre-industrial (°C)</h3><canvas id="temp"></canvas><p class="cap">WMO: 2024 at 1.55 °C, Jan to Aug 2025 at 1.42 °C. Paris goal line at 1.5 °C. <a href="https://wmo.int">WMO</a></p></div>
+</div></div></section>
+
+<section id="tech"><div class="wrap fade">
+<h2>3. How smart devices help: sense, send, act</h2>
+<p>Every device here repeats one loop. A sensor measures, the data travels to a phone or cloud, and a system acts or advises a person.</p>
+<div class="tabs" role="tablist">
+<button class="tab" role="tab" aria-selected="true" data-p="p1">Clean energy</button>
+<button class="tab" role="tab" aria-selected="false" data-p="p2">Smart farming</button>
+<button class="tab" role="tab" aria-selected="false" data-p="p3">Satellites and AI</button>
+<button class="tab" role="tab" aria-selected="false" data-p="p4">Smart buildings</button>
+</div>
+<div class="card">
+<div class="panel on" id="p1"><h3>Smarter clean energy</h3><p>Forecasting models predict sun and wind, smart grids balance supply and demand, and grid batteries hold surplus power for peak hours. This targets fossil fuel burning, the largest cause of warming.</p>
+<div class="loop"><div><b>Sense</b>Weather and grid load</div><div><b>Send</b>To grid control software</div><div><b>Act</b>Dispatch solar, wind, storage</div></div><p class="cap">India now has 300.50 GW of non-fossil capacity, over 54% of installed power (MNRE, July 2026).</p></div>
+<div class="panel" id="p2"><h3>Smarter farming</h3><p>Soil moisture and weather sensors say when to irrigate, drones find crop stress early, and crop residue can become briquettes or biochar instead of smoke.</p>
+<div class="loop"><div><b>Sense</b>Soil moisture, rainfall</div><div><b>Send</b>To a phone app</div><div><b>Act</b>Irrigate only when needed</div></div><p class="cap">Punjab farm fires fell from 36,663 in 2023 to 10,909 in 2024 (PPCB).</p></div>
+<div class="panel" id="p3"><h3>Satellites and AI for monitoring and early warning</h3><p>Satellites track ice, forests, heat and methane leaks. AI models turn this into wildfire detection, flood alerts and heat warnings sent to phones.</p>
+<div class="loop"><div><b>Sense</b>Satellite and ground data</div><div><b>Send</b>To analysis models</div><div><b>Act</b>Alert people and agencies</div></div><p class="cap">Early warning matters after events like the 2023 Maui wildfire.</p></div>
+<div class="panel" id="p4"><h3>Smart homes and buildings</h3><p>Occupancy sensors switch off empty rooms, smart thermostats learn schedules, and smart meters show water and power leaks.</p>
+<div class="loop"><div><b>Sense</b>Presence, temperature</div><div><b>Send</b>To a hub or app</div><div><b>Act</b>Cut cooling and lights</div></div><p class="cap">ENERGY STAR certified smart thermostats save about 8% of heating and cooling costs on average.</p></div>
+</div>
+<div class="next"><span>Next: <a href="#india">India and Punjab in numbers</a></span><span>Cost side: <a href="#footprint">device footprint</a></span></div>
+</div></section>
+
+<section id="india" class="tint"><div class="wrap fade">
+<h2>4. India and Punjab in numbers</h2>
+<div class="grid">
+<div class="card"><h3>India installed power by source, July 2026 (GW)</h3><canvas id="mix"></canvas><p class="cap">Fossil and other is the total of about 552 GW minus 300.50 GW non-fossil. <a href="https://mercomindia.com/indias-non-fossil-power-capacity-crosses-300-gw">Mercom</a>, MNRE</p></div>
+<div class="card"><h3>India solar capacity (GW)</h3><canvas id="solar"></canvas><p class="cap">2.8 GW in 2014, 150.26 GW (Mar 2026), 162.15 GW (Jun 2026), 164.59 GW (Jul 2026). India added about 37 GW in 2025, second only to China.</p></div>
+<div class="card"><h3>Punjab farm fire events per year</h3><canvas id="fires"></canvas><p class="cap">PPCB data via Business Standard. 2025 counts only cover 15 Sep to 21 Oct: 415, against 1,510 in 2024 and 1,764 in 2023 for the same window. Tarn Taran and Amritsar report the most.</p></div>
+</div>
+<div class="next"><span>Why it burns: wheat sowing window after paddy is short.</span><span><a href="#reports">Read local reports</a></span></div>
+</div></section>
+
+<section id="footprint"><div class="wrap fade">
+<h2>5. The other side: what devices cost</h2>
+<div class="grid">
+<div class="card"><h3>Global e-waste (million tonnes)</h3><canvas id="ewaste"></canvas><p class="cap">Global E-waste Monitor 2024. Only 22.3% of 2022 e-waste was documented as properly collected and recycled.</p></div>
+<div class="card"><h3>Data centre electricity (TWh per year)</h3><canvas id="dc"></canvas><p class="cap">IEA, Energy and AI (2025). 415 TWh in 2024 is about 1.5% of world electricity. The IEA also notes AI can cut emissions elsewhere.</p></div>
+</div>
+<p style="margin-top:18px">A device helps only if it saves more than it costs to make, run and dispose of. In India, old electronics should go to authorised collectors under the E-Waste (Management) Rules, 2022.</p>
+</div></section>
+
+<section id="calc" class="tint"><div class="wrap fade">
+<h2>6. Smart thermostat saving estimator</h2>
+<div class="card calc" style="max-width:520px">
+<label for="bill">Monthly heating and cooling spend (INR)</label><input id="bill" type="number" min="0" value="2000">
+<label for="rate">Saving rate</label><select id="rate"><option value="0.08">8% (ENERGY STAR average)</option><option value="0.05">5% (cautious)</option></select>
+<div class="out">Estimated yearly saving: <b id="save">INR 1,920</b></div>
+<p class="cap">An estimate from an average figure, not a guarantee. Savings vary with climate, home and habits.</p></div>
+</div></section>
+
+<section id="reports"><div class="wrap fade">
+<h2>7. Reports and news by topic</h2>
+<p>Pick a topic to jump between sources. All links open the publisher's own site.</p>
+<div class="tabs" id="filters">
+<button class="tab" aria-selected="true" data-f="all">All</button><button class="tab" aria-selected="false" data-f="science">Climate science</button><button class="tab" aria-selected="false" data-f="energy">Energy</button><button class="tab" aria-selected="false" data-f="india">India news</button><button class="tab" aria-selected="false" data-f="ewaste">E-waste and AI</button>
+</div>
+<div class="rep" id="rep"></div>
+</div></section>
+
+<section id="act" class="tint"><div class="wrap fade">
+<h2>8. Five actions</h2>
+<div class="card check"><ul id="list">
+<li><label><input type="checkbox"> Use the devices you already own</label></li>
+<li><label><input type="checkbox"> Choose efficient devices only where they replace a wasteful habit</label></li>
+<li><label><input type="checkbox"> Repair, reuse, and give old electronics to authorised collectors</label></li>
+<li><label><input type="checkbox"> Cut digital waste: delete unused files, lower streaming quality</label></li>
+<li><label><input type="checkbox"> Share one verified fact with ten people</label></li>
+</ul><p class="out"><b id="prog">0</b> of 5 done</p></div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+<p>Academic task (CA1) for CHE 110 at Lovely Professional University. Facts come from the linked sources and may be revised by those bodies. Technologies are examples, not endorsements. Views are the student's own, not the university's.</p>
+<p><a href="privacy.html">Privacy policy</a> | <a href="terms.html">Terms and conditions</a></p>
+</div></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script>
+const C={g:'#1f5c46',g2:'#2f7d5f',a:'#c9822b',s:'#2a6f8f',r:'#b5472f',m:'#8a9a90'};
+const opt=(t)=>({responsive:true,plugins:{legend:{display:false}},scales:t==='n'?{}:{y:{beginAtZero:true,grid:{color:'#e5ddc8'}},x:{grid:{display:false}}}});
+const mk=(id,type,labels,data,col,extra={})=>new Chart(document.getElementById(id),{type,data:{labels,datasets:[Object.assign({data,backgroundColor:col,borderColor:Array.isArray(col)?col:col,borderWidth:2,tension:.25},extra)]},options:opt(type==='doughnut'?'n':'x')});
+mk('co2','line',['1958','1980','1990','2000','2010','2020','May 2024','May 2025','May 2026'],[313,338.8,354.4,369.7,389.9,414.2,426.7,430.2,432],'rgba(31,92,70,.15)',{borderColor:C.g,fill:true,pointRadius:3,backgroundColor:'rgba(31,92,70,.15)'});
+new Chart(document.getElementById('temp'),{data:{labels:['2024','Jan to Aug 2025'],datasets:[{type:'bar',data:[1.55,1.42],backgroundColor:[C.r,C.a]},{type:'line',data:[1.5,1.5],borderColor:C.g,borderDash:[6,4],pointRadius:0,label:'1.5 °C goal'}]},options:opt('x')});
+const mixL=['Solar','Wind','Hydro','Bio','Nuclear','Fossil and other'];
+mk('mix','doughnut',mixL,[164.59,58.14,57.24,11.75,8.78,251.5],[C.a,C.s,C.g2,'#7a9a3c','#6b5b95'.replace('#6b5b95','#8a6d3b'),C.m]);
+mk('solar','bar',['2014','Mar 2026','Jun 2026','Jul 2026'],[2.8,150.26,162.15,164.59],C.a);
+mk('fires','bar',['2021','2022','2023','2024'],[71304,49922,36663,10909],C.r);
+new Chart(document.getElementById('ewaste'),{type:'bar',data:{labels:['2010','2022','2030 (proj.)'],datasets:[{label:'Generated',data:[34,62,82],backgroundColor:C.g},{label:'Documented as recycled',data:[8,13.8,null],backgroundColor:C.m}]},options:{responsive:true,scales:{y:{beginAtZero:true}}}});
+mk('dc','bar',['2024','2030 (proj.)','2035 (IEA base)'],[415,945,1200],C.s);
+document.querySelectorAll('.tab[data-p]').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tab[data-p]').forEach(x=>x.setAttribute('aria-selected',x===b));document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('on',p.id===b.dataset.p))});
+const R=[['science','Climate science','IPCC AR6 Synthesis Report','https://www.ipcc.ch/report/ar6/syr/','Human causes and required cuts'],
+['science','Climate science','WMO State of the Climate','https://wmo.int','Global temperature updates'],
+['science','Climate science','NASA: Causes of climate change','https://science.nasa.gov/climate-change/causes/','Greenhouse effect basics'],
+['science','Climate science','Scripps CO2 peak, 432 ppm','https://today.ucsd.edu/story/annual-carbon-dioxide-peak-reaches-432-parts-per-million','Mauna Loa record'],
+['science','Climate science','Carbon Brief','https://www.carbonbrief.org','Explainers and data analysis'],
+['energy','Energy','IEA: Energy and AI','https://www.iea.org/reports/energy-and-ai','Data centre demand and AI uses'],
+['energy','Energy','MNRE, Govt. of India','https://mnre.gov.in','Renewable capacity statistics'],
+['energy','Energy','Mercom India','https://mercomindia.com','Solar and clean energy news'],
+['energy','Energy','ENERGY STAR smart thermostats','https://www.energystar.gov','Savings data'],
+['india','India news','Down To Earth','https://www.downtoearth.org.in','Environment reporting, India'],
+['india','India news','Mongabay India','https://india.mongabay.com','Conservation and climate stories'],
+['india','India news','Punjab Pollution Control Board','https://www.ppcb.gov.in','Farm fire and air data'],
+['india','India news','Commission for Air Quality Management','https://caqm.nic.in','Air quality orders for NCR region'],
+['ewaste','E-waste and AI','Global E-waste Monitor 2024','https://www.itu.int/en/ITU-D/Environment/Pages/Publications/The-Global-E-waste-Monitor-2024.aspx','ITU and UNITAR'],
+['ewaste','E-waste and AI','E-Waste (Management) Rules, 2022','https://moef.gov.in','Producer responsibility in India'],
+['ewaste','E-waste and AI','UNFCCC Paris Agreement','https://unfccc.int/process-and-meetings/the-paris-agreement','The 1.5 °C goal']];
+const rep=document.getElementById('rep');
+function draw(f){rep.innerHTML=R.filter(r=>f==='all'||r[0]===f).map(r=>`<a href="${r[3]}" target="_blank" rel="noopener"><span>${r[1]}</span><br>${r[2]}<em>${r[4]}</em></a>`).join('')}
+draw('all');
+document.querySelectorAll('#filters .tab').forEach(b=>b.onclick=()=>{document.querySelectorAll('#filters .tab').forEach(x=>x.setAttribute('aria-selected',x===b));draw(b.dataset.f)});
+const bill=document.getElementById('bill'),rate=document.getElementById('rate'),save=document.getElementById('save');
+function calc(){save.textContent='INR '+Math.round((+bill.value||0)*12*rate.value).toLocaleString('en-IN')}
+bill.oninput=rate.onchange=calc;calc();
+const boxes=document.querySelectorAll('#list input');boxes.forEach(b=>b.onchange=()=>document.getElementById('prog').textContent=[...boxes].filter(x=>x.checked).length);
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.08});
+document.querySelectorAll('.fade').forEach(el=>io.observe(el));
+</script>
+</body></html>
